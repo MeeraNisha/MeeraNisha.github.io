@@ -1,0 +1,81 @@
+body{background-color: lightcoral;
+background-image: url(../images/bg.jpg);
+background-repeat: no-repeat;
+background-position: 50%-50%;
+background-attachment: fixed; 
+/*stops the background moving when user scrolls*/
+background-size:cover;
+font-family: Helvetica, Arial, sans-serif;
+}
+.main {
+	background-color:rgba(255,255,255,0.8);
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 40px;
+	box-shadow: 15px 5px 20px 5px gold; 
+
+
+}
+/*MOBILE*/
+@media screen and (max-width: -width: 767px) {
+.main { 
+width: 100%; 
+background: red;
+}
+}
+
+@media screen and (min-width 768px) and (max-width 1024px) {.main width:748px; background blue; max-wd }
+
+h1 {font-family: 'Rock Salt', cursive;
+	text-align: center;
+	font-size: 50px;
+	margin: 0;
+	text-shadow: 0 0 10px white;
+}
+
+h2 {text-align: center;
+font-weight: normal; 
+text-transform: uppercase;
+letter-spacing: 5px;}
+
+/*Image centering*/
+img{
+	display: block;
+	margin: 0 auto;
+	border: 40px dotted gold;
+	border-radius: 50% 30px 100px;
+	transition: all 500ms;
+
+
+}
+img:hover  {
+	border-radius: 0; 
+	transform: rotateZ(720deg) scale(1.2);
+}
+p,
+ul,
+ol {line-height: 1.6;
+	list-style: lower-roman;
+	padding-left: 0;
+}
+
+h3{margin-bottom: 0};
+h3:hover{ text-decoration: underline;
+cursor: pointer; }
+
+h3 + * {display:none;}
+
+a{
+	color:white; 
+	text-decoration: none;
+	font-weight:bold
+	;
+}
+a:hover{
+	text-decoration:underline;
+	transform: rotateZ(180deg);
+	/*display: inline-block;*/
+
+
+}
